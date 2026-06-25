@@ -140,7 +140,7 @@ def cached_endpoint(ttl=300):
 
 # === Flask Routes ===
 
-@app.route('/accinfo')
+@app.route('/info')
 @cached_endpoint()
 def get_account_info():
     uid = request.args.get('uid')
